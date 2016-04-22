@@ -16,9 +16,10 @@
     if (heroDict)
     {
         hero = [[Hero alloc] init];
-        hero.coverName = [heroDict objectForKey:@"coverName"];
+        hero.name = [heroDict objectForKey:@"name"];
+        hero.homeWorld = [heroDict objectForKey:@"homeworld"];
+        hero.powers = [heroDict objectForKey:@"powers"];
         
-        hero.accessLevel = [[heroDict objectForKey:@"accessLevel"] intValue];
     }
     return hero;
 }

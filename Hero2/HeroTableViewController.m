@@ -32,11 +32,14 @@
 - (void)loadHeroList
 {
     
+    heros = [[NSMutableArray alloc] init];
+    
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Hero" ofType:@"json"];
     NSArray *newHeros = [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfFile:filePath] options:NSJSONReadingAllowFragments error:nil];
     
     for (NSDictionary * hero in newHeros) {
-        [heros addObject:[Hero heroWithDictionary:hero]];
+        Hero *h = [Hero heroWithDictionary:hero];
+        [heros addObject:h];
     }
     
     [self.tableView reloadData];
@@ -78,16 +81,16 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return 10;
-    // return self.objects.count;
+    return heros.count;
+ 
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
-    // NSDate *object = self.objects[indexPath.row];
-    cell.textLabel.text = @"Hello";
+    Hero *hero = heros[indexPath.row];
+    cell.textLabel.text = hero.name;
     return cell;
 }
 

@@ -10,9 +10,10 @@
 
 @interface Hero : NSObject
 
-@property (nonatomic) NSString *coverName;
-@property (nonatomic) NSString *realName;
-@property (assign)    NSInteger accessLevel;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *homeWorld;
+@property (nonatomic, copy) NSString *powers;
+
 
 + (Hero *)heroWithDictionary:(NSDictionary *)heroDict;
 
