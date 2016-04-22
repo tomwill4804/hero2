@@ -22,6 +22,8 @@
 
 - (void)viewDidLoad {
     
+    self.title = @"S.H.I.E.L.D. Hero Tracker";
+    
     [super viewDidLoad];
     [self loadHeroList];
     
@@ -62,13 +64,11 @@
 #pragma mark - Segues
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([[segue identifier] isEqualToString:@"showDetail"]) {
+    if ([[segue identifier] isEqualToString:@"heroDetails"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSDate *object = self.objects[indexPath.row];
-        HeroDetailsViewController *controller = (HeroDetailsViewController *)[[segue destinationViewController] topViewController];
-   //     [controller setDetailItem:object];
-        controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
-        controller.navigationItem.leftItemsSupplementBackButton = YES;
+        Hero *hero = heros[indexPath.row];
+        HeroDetailsViewController *dvc = segue.destinationViewController;
+        dvc.hero = hero;
     }
 }
 
