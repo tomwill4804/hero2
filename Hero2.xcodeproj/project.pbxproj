@@ -15,6 +15,7 @@
 		E3A0D7051CCA7CE1005B3120 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3A0D7031CCA7CE1005B3120 /* LaunchScreen.storyboard */; };
 		E3A0D70E1CCA7D90005B3120 /* Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A0D70D1CCA7D90005B3120 /* Hero.m */; };
 		E3A0D7111CCA7E03005B3120 /* HeroDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A0D7101CCA7E03005B3120 /* HeroDetailsViewController.m */; };
+		E3A0D7131CCA80CD005B3120 /* Hero.json in Resources */ = {isa = PBXBuildFile; fileRef = E3A0D7121CCA80CD005B3120 /* Hero.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		E3A0D70D1CCA7D90005B3120 /* Hero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hero.m; sourceTree = "<group>"; };
 		E3A0D70F1CCA7E03005B3120 /* HeroDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroDetailsViewController.h; sourceTree = "<group>"; };
 		E3A0D7101CCA7E03005B3120 /* HeroDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroDetailsViewController.m; sourceTree = "<group>"; };
+		E3A0D7121CCA80CD005B3120 /* Hero.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Hero.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				E3A0D7101CCA7E03005B3120 /* HeroDetailsViewController.m */,
 				E3A0D6FE1CCA7CE1005B3120 /* Main.storyboard */,
 				E3A0D7011CCA7CE1005B3120 /* Assets.xcassets */,
+				E3A0D7121CCA80CD005B3120 /* Hero.json */,
 				E3A0D7031CCA7CE1005B3120 /* LaunchScreen.storyboard */,
 				E3A0D7061CCA7CE1005B3120 /* Info.plist */,
 				E3A0D6F51CCA7CE1005B3120 /* Supporting Files */,
@@ -149,6 +152,7 @@
 				E3A0D7051CCA7CE1005B3120 /* LaunchScreen.storyboard in Resources */,
 				E3A0D7021CCA7CE1005B3120 /* Assets.xcassets in Resources */,
 				E3A0D7001CCA7CE1005B3120 /* Main.storyboard in Resources */,
+				E3A0D7131CCA80CD005B3120 /* Hero.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

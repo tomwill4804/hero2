@@ -10,4 +10,18 @@
 
 @implementation Hero
 
++ (Hero *)heroWithDictionary:(NSDictionary *)heroDict
+{
+    Hero *hero = nil;
+    if (heroDict)
+    {
+        hero = [[Hero alloc] init];
+        hero.coverName = [heroDict objectForKey:@"coverName"];
+        
+        hero.accessLevel = [[heroDict objectForKey:@"accessLevel"] intValue];
+    }
+    return hero;
+}
+
+
 @end
