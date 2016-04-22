@@ -1,6 +1,6 @@
 //
-//  ViewController.h
-//  Hero2
+//  HeroTableViewController.h
+//  HeroTracker
 //
 //  Created by Tom Williamson on 4/22/16.
 //  Copyright © 2016 Tom Williamson. All rights reserved.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface HeroTableViewController : UITableViewController
 
 @end
-
