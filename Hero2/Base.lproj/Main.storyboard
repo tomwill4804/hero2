@@ -94,6 +94,26 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection headerTitle="Powers" id="RJR-0i-Oca">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="172" id="ugf-Eh-zXU">
+                                        <rect key="frame" x="0.0" y="187.5" width="600" height="172"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ugf-Eh-zXU" id="E8Q-2c-uKt">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="171.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O64-6u-bYI">
+                                                    <rect key="frame" x="8" y="0.0" width="592" height="171.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="9Zh-8W-ha2" id="Uvl-9U-ad7"/>
@@ -103,6 +123,7 @@
                     <connections>
                         <outlet property="fullName" destination="sb8-nI-Xjp" id="ryE-Ze-nWY"/>
                         <outlet property="homeWorld" destination="9fF-SG-2a9" id="K1d-Pe-gt7"/>
+                        <outlet property="powers" destination="O64-6u-bYI" id="lpp-rY-trS"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="exf-0u-tEW" userLabel="First Responder" sceneMemberID="firstResponder"/>

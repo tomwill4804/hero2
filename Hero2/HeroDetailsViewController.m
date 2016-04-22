@@ -19,6 +19,7 @@
     
     self.fullName.text = self.hero.name;
     self.homeWorld.text = self.hero.homeWorld;
+    self.powers.text = self.hero.powers;
     
 }
 
