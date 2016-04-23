@@ -64,8 +64,8 @@
 #pragma mark - Segues
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([[segue identifier] isEqualToString:@"heroDetails"]) {
-        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    if ([segue.identifier isEqualToString:@"heroDetails"]) {
+        NSIndexPath *indexPath = (self.tableView).indexPathForSelectedRow;
         Hero *hero = heros[indexPath.row];
         HeroDetailsViewController *dvc = segue.destinationViewController;
         dvc.hero = hero;

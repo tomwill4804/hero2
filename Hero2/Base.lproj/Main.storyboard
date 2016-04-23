@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Root View Controller-->
@@ -96,19 +97,48 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="Powers" id="RJR-0i-Oca">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="172" id="ugf-Eh-zXU">
-                                        <rect key="frame" x="0.0" y="187.5" width="600" height="172"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="129" id="ugf-Eh-zXU">
+                                        <rect key="frame" x="0.0" y="188" width="600" height="129"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ugf-Eh-zXU" id="E8Q-2c-uKt">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="171.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="129"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O64-6u-bYI">
-                                                    <rect key="frame" x="8" y="0.0" width="592" height="171.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cNt-ow-ig7">
+                                                    <rect key="frame" x="21" y="8" width="550" height="113"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="cNt-ow-ig7" firstAttribute="leading" secondItem="E8Q-2c-uKt" secondAttribute="leadingMargin" constant="10" id="2hO-HC-Xve"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="cNt-ow-ig7" secondAttribute="trailing" constant="10" id="Pqo-OU-ZxP"/>
+                                                <constraint firstItem="cNt-ow-ig7" firstAttribute="top" secondItem="E8Q-2c-uKt" secondAttribute="topMargin" id="eGw-uM-2wR"/>
+                                                <constraint firstItem="cNt-ow-ig7" firstAttribute="centerY" secondItem="E8Q-2c-uKt" secondAttribute="centerY" id="z45-Mf-Ybx"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Photos" id="qI5-O6-Kj1">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="129" id="cHh-jE-t5U">
+                                        <rect key="frame" x="0.0" y="366.5" width="600" height="129"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cHh-jE-t5U" id="sbh-rj-Fme">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="128.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hZT-CA-9cr">
+                                                    <rect key="frame" x="0.0" y="0.0" width="189" height="128"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lfw-YH-3wI">
+                                                    <rect key="frame" x="193" y="0.0" width="191" height="128"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x3r-Jk-pkw">
+                                                    <rect key="frame" x="389" y="0.0" width="203" height="128"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -123,7 +153,10 @@
                     <connections>
                         <outlet property="fullName" destination="sb8-nI-Xjp" id="ryE-Ze-nWY"/>
                         <outlet property="homeWorld" destination="9fF-SG-2a9" id="K1d-Pe-gt7"/>
-                        <outlet property="powers" destination="O64-6u-bYI" id="lpp-rY-trS"/>
+                        <outlet property="image1" destination="hZT-CA-9cr" id="fYL-b3-JwN"/>
+                        <outlet property="image2" destination="Lfw-YH-3wI" id="omx-w5-U4p"/>
+                        <outlet property="image3" destination="x3r-Jk-pkw" id="kcr-Es-EdE"/>
+                        <outlet property="powers" destination="cNt-ow-ig7" id="gma-q3-tFD"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="exf-0u-tEW" userLabel="First Responder" sceneMemberID="firstResponder"/>

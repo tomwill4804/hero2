@@ -13,6 +13,7 @@
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *homeWorld;
 @property (nonatomic, copy) NSString *powers;
+@property (nonatomic, copy) NSMutableArray *images;
 
 
 + (Hero *)heroWithDictionary:(NSDictionary *)heroDict;
