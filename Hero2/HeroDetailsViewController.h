@@ -14,9 +14,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *fullName;
 @property (weak, nonatomic) IBOutlet UILabel *homeWorld;
 @property (weak, nonatomic) IBOutlet UILabel *powers;
-@property (weak, nonatomic) IBOutlet UIImageView *image1;
-@property (weak, nonatomic) IBOutlet UIImageView *image2;
-@property (weak, nonatomic) IBOutlet UIImageView *image3;
+@property (strong, nonatomic) IBOutletCollection(UIImageView) NSArray *images;
 
 @property (weak, nonatomic) Hero *hero;
 

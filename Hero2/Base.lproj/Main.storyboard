@@ -98,7 +98,7 @@
                             <tableViewSection headerTitle="Powers" id="RJR-0i-Oca">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="129" id="ugf-Eh-zXU">
-                                        <rect key="frame" x="0.0" y="188" width="600" height="129"/>
+                                        <rect key="frame" x="0.0" y="187.5" width="600" height="129"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ugf-Eh-zXU" id="E8Q-2c-uKt">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="129"/>
@@ -121,7 +121,7 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="Photos" id="qI5-O6-Kj1">
+                            <tableViewSection headerTitle="Images" id="qI5-O6-Kj1">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="129" id="cHh-jE-t5U">
                                         <rect key="frame" x="0.0" y="366.5" width="600" height="129"/>
@@ -130,13 +130,13 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="128.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hZT-CA-9cr">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hZT-CA-9cr">
                                                     <rect key="frame" x="0.0" y="0.0" width="189" height="128"/>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lfw-YH-3wI">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lfw-YH-3wI">
                                                     <rect key="frame" x="193" y="0.0" width="191" height="128"/>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x3r-Jk-pkw">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x3r-Jk-pkw">
                                                     <rect key="frame" x="389" y="0.0" width="203" height="128"/>
                                                 </imageView>
                                             </subviews>
@@ -153,10 +153,10 @@
                     <connections>
                         <outlet property="fullName" destination="sb8-nI-Xjp" id="ryE-Ze-nWY"/>
                         <outlet property="homeWorld" destination="9fF-SG-2a9" id="K1d-Pe-gt7"/>
-                        <outlet property="image1" destination="hZT-CA-9cr" id="fYL-b3-JwN"/>
-                        <outlet property="image2" destination="Lfw-YH-3wI" id="omx-w5-U4p"/>
-                        <outlet property="image3" destination="x3r-Jk-pkw" id="kcr-Es-EdE"/>
                         <outlet property="powers" destination="cNt-ow-ig7" id="gma-q3-tFD"/>
+                        <outletCollection property="images" destination="hZT-CA-9cr" id="ZZI-Fa-B5i"/>
+                        <outletCollection property="images" destination="Lfw-YH-3wI" id="urn-Is-15N"/>
+                        <outletCollection property="images" destination="x3r-Jk-pkw" id="xOM-gz-Lxm"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="exf-0u-tEW" userLabel="First Responder" sceneMemberID="firstResponder"/>

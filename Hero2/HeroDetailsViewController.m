@@ -21,12 +21,14 @@
     self.homeWorld.text = self.hero.homeWorld;
     self.powers.text = self.hero.powers;
     
-    NSArray *imageView = @[self.image1, self.image2, self.image3];
-    for (NSString *imageURL in self.hero.images) {
-        NSURL *imageURL = [NSURL URLWithString:imageURL];
+    for (int i=0; i < self.hero.images.count; i++) {
+        NSURL *imageURL = [NSURL URLWithString:self.hero.images[i]];
         NSData *imageData = [NSData dataWithContentsOfURL:imageURL];
-        (UIImageView*)imageView[0] = [UIImage imageWithData:imageData];
+        UIImageView *iv = self.images[i];
+        iv.image = [UIImage imageWithData:imageData];
     }
+    
+    self.title = self.hero.name;
    
 }
 

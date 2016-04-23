@@ -30,19 +30,33 @@
     
 }
 
-
+//
+//  build an array of Heros
+//
 - (void)loadHeroList
 {
     
     heros = [[NSMutableArray alloc] init];
-    
+    //
+    //  get json data
+    //
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Hero" ofType:@"json"];
     NSArray *newHeros = [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfFile:filePath] options:NSJSONReadingAllowFragments error:nil];
     
+    //
+    //  loop through each hero
+    //
     for (NSDictionary * hero in newHeros) {
         Hero *h = [Hero heroWithDictionary:hero];
         [heros addObject:h];
     }
+    
+    //
+    //  sort the list
+    //
+    NSSortDescriptor *asc = [NSSortDescriptor sortDescriptorWithKey:@"name" ascending:YES];
+    [heros sortUsingDescriptors:[NSArray arrayWithObject:asc]];
+
     
     [self.tableView reloadData];
     

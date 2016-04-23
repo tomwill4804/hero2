@@ -31,8 +31,10 @@
         hero.name = heroDict[@"name"];
         hero.homeWorld = heroDict[@"homeworld"];
         hero.powers = heroDict[@"powers"];
-        for(NSString *imageURL in heroDict[@"images"])
+        
+        for(NSString *imageURL in heroDict[@"images"]) {
             [hero.images addObject:imageURL];
+        }
     }
     
     return hero;
