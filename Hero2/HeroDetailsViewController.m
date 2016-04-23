@@ -14,6 +14,9 @@
 
 @implementation HeroDetailsViewController
 
+//
+//  connect data to outlets
+//
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -21,6 +24,9 @@
     self.homeWorld.text = self.hero.homeWorld;
     self.powers.text = self.hero.powers;
     
+    //
+    //  images
+    //
     for (int i=0; i < self.hero.images.count; i++) {
         NSURL *imageURL = [NSURL URLWithString:self.hero.images[i]];
         NSData *imageData = [NSData dataWithContentsOfURL:imageURL];
