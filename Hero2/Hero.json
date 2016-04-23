@@ -1,57 +1,50 @@
- [
-  {
-  "coverName": "Ethan Hunt",
-  "realName": "Tom Cruise",
-  "accessLevel": 8
-  },
-  {
-  "coverName": "Jim Phelps",
-  "realName": "Jon Voight",
-  "accessLevel": 9
-  },
-  {
-  "coverName": "Claire Phelps",
-  "realName": "Emmanuelle Beart",
-  "accessLevel": 5
-  },
-  {
-  "coverName": "Eugene Kittridge",
-  "realName": "Henry Czerny",
-  "accessLevel": 10
-  },
-  {
-  "coverName": "Franz Krieger",
-  "realName": "Jean Reno",
-  "accessLevel": 4
-  },
-  {
-  "coverName": "Luther Stickell",
-  "realName": "Ving Rhames",
-  "accessLevel": 4
-  },
-  {
-  "coverName": "Sarah Davies",
-  "realName": "Kristin Scott Thomas",
-  "accessLevel": 5
-  },
-  {
-  "coverName": "Max RotGrab",
-  "realName": "Vanessa Redgrave",
-  "accessLevel": 4
-  },
-  {
-  "coverName": "Hannah Williams",
-  "realName": "Ingeborga Dapkūnaitė",
-  "accessLevel": 5
-  },
-  {
-  "coverName": "Jack Harmon",
-  "realName": "Emilio Estevez",
-  "accessLevel": 6
-  },
-  {
-  "coverName": "Frank Barnes",
-  "realName": "Dale Dye",
-  "accessLevel": 9
-  }
-  ]
+[
+ {
+ "name": "Thor",
+ "homeworld": "Asgard",
+ "powers": "Superhuman strength, endurance, and longevity; abilities via Mjolnir: dimensional transportation; electric manipulation; flight; weather manipulation",
+ "images" : ["https://vignette3.wikia.nocookie.net/marvelmovies/images/e/ec/Thor_111.jpg/revision/latest?cb=20111007062627",
+             "https://vignette3.wikia.nocookie.net/avengersalliance/images/2/22/Avengers_Thor_Portrait_Art.png/revision/latest?cb=20130529070928"
+             ]
+ },
+ {
+ "name": "Iron Man",
+ "homeworld": "Earth",
+ "powers": "Genius-level intellect; highly proficient scientist, engineer, and businessperson; via powered armored suit: superhuman strength and durability; supersonic flight at Mach 3; energy repulsors; missiles; regenerative life support (sometimes powered by solar power)"
+ },
+ {
+ "name": "Groot",
+ "homeworld": "Planet X",
+ "powers": "Ability to absorb wood to feed, rebuild self, enhance his strength and control trees; regeneration; resistance to fire"
+ },
+ {
+ "name": "Rocket Racoon",
+ "homeworld": "Halfworld",
+ "powers": "Genius-level intellect; master tactician and field commander; expert marksman and sniper; accomplished starship aviator; normal-physical attributes of an Earth raccoon"
+ },
+ {
+ "name": "Drax the Destroyer",
+ "homeworld": "Earth",
+ "powers": "Superhuman strength; stamina and resistance to injury; highly skilled in use of knives"
+ },
+ {
+ "name": "Star-Lord",
+ "homeworld": "Earth",
+ "powers": "Master strategist and problem solver; skilled marksman and fencer; use of element gun; via suit: superhuman strength and durability; flight; ability to travel through space"
+ },
+ {
+ "name": "Gamora",
+ "homeworld": "Zen-Whoberi",
+ "powers": "Highly skilled assassin and gymnast; skilled martial artist; superhuman strength, speed, agility and durability; accelerated healing factor"
+ },
+ {
+ "name": "Hulk",
+ "homeworld": "Earth",
+ "powers": "Bruce Banner: Genius-level intellect; Hulk: immense superhuman strength, stamina, durability, endurance, longevity, regenerative healing factor"
+ },
+ {
+ "name": "Captain America",
+ "homeworld": "Earth",
+ "powers": "Peak physical condition; wields vibranium-steel alloy shield; expert tactician and field commander"
+ }
+ ]
